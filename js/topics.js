@@ -432,6 +432,35 @@ const TOPICS = [
     summary: 'A general shape of the first-year schedule — your pediatrician provides the exact plan.',
     body: `
       <p>Your pediatrician will give you the exact schedule and product details at each visit — this is just a general shape of the standard first-year visit schedule so it's not a surprise.</p>
+      <div class="diagram">
+        <svg viewBox="0 0 600 150" role="img" aria-label="Timeline of standard first-year vaccination visits at birth, 2 months, 4 months, 6 months, and 12 months">
+          <line x1="50" y1="75" x2="550" y2="75" stroke="var(--color-border)" stroke-width="3"/>
+          <g font-family="Inter, sans-serif">
+            <circle cx="50" cy="75" r="8" fill="var(--color-accent)"/>
+            <text x="50" y="55" text-anchor="middle" font-size="12" font-weight="600" fill="var(--color-text)">Birth</text>
+            <text x="50" y="98" text-anchor="middle" font-size="10" fill="var(--color-text-muted)">Hep B</text>
+
+            <circle cx="175" cy="75" r="8" fill="var(--color-accent)"/>
+            <text x="175" y="55" text-anchor="middle" font-size="12" font-weight="600" fill="var(--color-text)">2 mo</text>
+            <text x="175" y="98" text-anchor="middle" font-size="10" fill="var(--color-text-muted)">DTaP, Polio,</text>
+            <text x="175" y="112" text-anchor="middle" font-size="10" fill="var(--color-text-muted)">Hib, PCV, RV</text>
+
+            <circle cx="300" cy="75" r="8" fill="var(--color-accent)"/>
+            <text x="300" y="55" text-anchor="middle" font-size="12" font-weight="600" fill="var(--color-text)">4 mo</text>
+            <text x="300" y="98" text-anchor="middle" font-size="10" fill="var(--color-text-muted)">2nd round</text>
+
+            <circle cx="425" cy="75" r="8" fill="var(--color-accent)"/>
+            <text x="425" y="55" text-anchor="middle" font-size="12" font-weight="600" fill="var(--color-text)">6 mo</text>
+            <text x="425" y="98" text-anchor="middle" font-size="10" fill="var(--color-text-muted)">3rd round +</text>
+            <text x="425" y="112" text-anchor="middle" font-size="10" fill="var(--color-text-muted)">flu vaccine</text>
+
+            <circle cx="550" cy="75" r="8" fill="var(--color-accent)"/>
+            <text x="550" y="55" text-anchor="middle" font-size="12" font-weight="600" fill="var(--color-text)">12 mo</text>
+            <text x="550" y="98" text-anchor="middle" font-size="10" fill="var(--color-text-muted)">MMR, Varicella,</text>
+            <text x="550" y="112" text-anchor="middle" font-size="10" fill="var(--color-text-muted)">Hep A</text>
+          </g>
+        </svg>
+      </div>
       <ul>
         <li><strong>Birth:</strong> Hepatitis B (1st dose), often given in the hospital.</li>
         <li><strong>2 months:</strong> First round of several vaccines (e.g. DTaP, polio, Hib, pneumococcal, rotavirus) — this visit often brings mild fussiness/low fever, which is normal.</li>
@@ -498,6 +527,32 @@ const TOPICS = [
     summary: 'A general guide — babies vary widely, and ranges matter more than exact ages.',
     body: `
       <p>Every baby develops at their own pace — these are general ranges, not deadlines. Bring concerns to your pediatrician's well-baby visits, where development is checked at every stage.</p>
+      <div class="diagram">
+        <svg viewBox="0 0 600 210" role="img" aria-label="Timeline of general developmental milestone ranges from 1 to 12 months">
+          <line x1="40" y1="105" x2="560" y2="105" stroke="var(--color-border)" stroke-width="3"/>
+          <g font-family="Inter, sans-serif">
+            <circle cx="40" cy="105" r="7" fill="var(--color-accent)"/>
+            <text x="40" y="130" text-anchor="middle" font-size="11" font-weight="600" fill="var(--color-text)">1&#8211;2 mo</text>
+            <text x="40" y="85" text-anchor="middle" font-size="10" fill="var(--color-text-muted)">Social smile</text>
+
+            <circle cx="170" cy="105" r="7" fill="var(--color-accent)"/>
+            <text x="170" y="130" text-anchor="middle" font-size="11" font-weight="600" fill="var(--color-text)">3&#8211;4 mo</text>
+            <text x="170" y="150" text-anchor="middle" font-size="10" fill="var(--color-text-muted)">Head steady</text>
+
+            <circle cx="300" cy="105" r="7" fill="var(--color-accent)"/>
+            <text x="300" y="130" text-anchor="middle" font-size="11" font-weight="600" fill="var(--color-text)">5&#8211;6 mo</text>
+            <text x="300" y="85" text-anchor="middle" font-size="10" fill="var(--color-text-muted)">Rolls over</text>
+
+            <circle cx="430" cy="105" r="7" fill="var(--color-accent)"/>
+            <text x="430" y="130" text-anchor="middle" font-size="11" font-weight="600" fill="var(--color-text)">7&#8211;9 mo</text>
+            <text x="430" y="150" text-anchor="middle" font-size="10" fill="var(--color-text-muted)">Sits alone</text>
+
+            <circle cx="560" cy="105" r="7" fill="var(--color-accent)"/>
+            <text x="530" y="130" text-anchor="middle" font-size="11" font-weight="600" fill="var(--color-text)">10&#8211;12 mo</text>
+            <text x="560" y="85" text-anchor="middle" font-size="10" fill="var(--color-text-muted)">First steps</text>
+          </g>
+        </svg>
+      </div>
       <ul>
         <li><strong>1–2 months:</strong> Brief eye contact, starts to smile socially, lifts head briefly during tummy time.</li>
         <li><strong>3–4 months:</strong> Holds head steady, pushes up on arms during tummy time, brings hands together, laughs/coos.</li>
