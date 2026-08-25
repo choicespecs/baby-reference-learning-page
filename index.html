@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Baby Reference</title>
+  <meta name="description" content="A calm, browsable reference for newborn baby care and health." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <button class="icon-btn menu-toggle" id="menu-toggle" aria-label="Toggle categories">&#9776;</button>
+      <a class="brand" href="#/">Baby Reference</a>
+      <div class="search-wrap">
+        <input
+          type="search"
+          id="search-input"
+          class="search-input"
+          placeholder="Search topics... (e.g. fever, feeding, sleep)"
+          aria-label="Search topics"
+        />
+      </div>
+    </header>
+
+    <div class="body-layout">
+      <div class="sidebar-overlay" id="sidebar-overlay"></div>
+      <nav class="sidebar" id="sidebar" aria-label="Categories"></nav>
+      <main class="content" id="content"></main>
+    </div>
+
+    <footer class="disclaimer">
+      This is a personal reference, not medical advice. Always consult your pediatrician for guidance specific to your baby.
+    </footer>
+  </div>
+
+  <script src="js/topics.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/router.js"></script>
+</body>
+</html>
