@@ -40,6 +40,9 @@ const TOPICS = [
       { title: 'Good Night, Sleep Tight: How to Swaddle Your Baby', source: 'HealthyChildren.org (AAP)', url: 'https://www.healthychildren.org/English/ages-stages/baby/sleep/Pages/good-night-sleep-tight.aspx' },
     ],
     video: { id: 'JGHdv6zd79M', title: 'Swaddling', source: "Stanford Medicine Children's Health" },
+    moreVideos: [
+      { id: 'pJCQf2Xxlrk', title: 'How to Swaddle a Newborn', source: 'Mount Sinai Parenting Center' },
+    ],
     body: `
       <p>Swaddling recreates the snug feeling of the womb and can help calm a newborn and improve sleep. Done incorrectly, it can be a safety or hip-development risk — a few rules make it safe.</p>
       <h3>How to do it safely</h3>
@@ -97,6 +100,9 @@ const TOPICS = [
       { title: 'Getting a Good Breastfeeding Latch & What To Know About Latch', source: 'Cleveland Clinic', url: 'https://my.clevelandclinic.org/health/articles/breastfeeding-latch' },
     ],
     video: { id: 'whkO4hUbVGw', title: 'Latching in a Laid-Back Position', source: 'La Leche League Canada' },
+    moreVideos: [
+      { id: 'or4OnMxihUg', title: 'Breastfeeding Tips: Common Breastfeeding Positions', source: 'Michigan Medicine' },
+    ],
     body: `
       <p>Whether breastfeeding, bottle feeding, or both, newborns eat often — typically <strong>8 to 12 times in 24 hours</strong> in the first weeks, roughly every 2–3 hours, including overnight.</p>
       <h3>Breastfeeding basics</h3>
@@ -124,6 +130,9 @@ const TOPICS = [
       { title: 'Burping Your Baby: Techniques, Tips and Timing', source: 'Cleveland Clinic', url: 'https://health.clevelandclinic.org/how-to-burp-a-baby' },
     ],
     video: { id: '75oi_edksLk', title: 'How to Burp a Baby', source: 'HCA HealthONE' },
+    moreVideos: [
+      { id: 'fgcWOzauLxI', title: 'How to Burp a Newborn', source: 'Mount Sinai Parenting Center' },
+    ],
     body: `
       <p>Babies swallow air while feeding, especially with a bottle, which can cause fussiness or spit-up if not released. Try burping midway through a feed and again at the end.</p>
       <h3>Common positions</h3>
@@ -268,6 +277,9 @@ const TOPICS = [
       { title: 'How to Change a Diaper: Step-by-Step Guide', source: 'Pampers', url: 'https://www.pampers.com/en-us/baby/diapering/article/how-to-change-a-diaper' },
     ],
     video: { id: 'euDUqiYdh3U', title: 'Diapering a Newborn', source: "Nicklaus Children's Hospital" },
+    moreVideos: [
+      { id: 'cDa2BTZppUc', title: "NUH: How to Change Your Baby's Diaper", source: 'National University Hospital, Singapore' },
+    ],
     body: `
       <p>You'll do this 6–10+ times a day at first, so a smooth routine helps.</p>
       <h3>Steps</h3>
@@ -314,6 +326,9 @@ const TOPICS = [
       { title: 'Bath Time for Baby: When and How To Bathe Your Newborn', source: 'Cleveland Clinic', url: 'https://health.clevelandclinic.org/how-to-bathe-newborn' },
     ],
     video: { id: 'dfCCbVWrdPw', title: 'How to Give Infant a Sponge Bath', source: 'CloudMom' },
+    moreVideos: [
+      { id: 'P0eg44MJ-qg', title: 'How To Bathe A Newborn Baby: A Comprehensive Guide', source: 'Henry Ford Health' },
+    ],
     body: `
       <p>Newborns don't need daily baths — their skin can dry out, and they don't get very dirty. <strong>2–3 times a week</strong> is generally plenty (with regular face/diaper-area cleaning in between).</p>
       <h3>Before the umbilical cord falls off</h3>
@@ -362,6 +377,9 @@ const TOPICS = [
       { title: 'How to Take a Rectal Temperature', source: 'Nemours KidsHealth', url: 'https://kidshealth.org/en/parents/rectal-temperature.html' },
     ],
     video: { id: 'OynykCxWls0', title: "Taking a Newborn's Temperature", source: 'Mount Sinai Parenting Center' },
+    moreVideos: [
+      { id: 'n90G_OiH-qA', title: "How to Take a Baby's Temperature in Armpit (Axillary method)", source: 'RegisteredNurseRN' },
+    ],
     body: `
       <p>For babies under 3 months, a <strong>rectal temperature</strong> is the most accurate method and the one pediatricians rely on for fever decisions — forehead/ear thermometers can be less reliable at this age.</p>
       <h3>How to take a rectal temperature</h3>
@@ -383,6 +401,9 @@ const TOPICS = [
       { title: 'How to Install a Rear-Facing Only Infant Car Seat', source: 'NHTSA', url: 'https://www.nhtsa.gov/how-install-rear-facing-only-infant-car-seat' },
     ],
     video: { id: 'i3VRVTdzFio', title: 'Installing a Rear-Facing Car Safety Seat', source: 'American Academy of Pediatrics' },
+    moreVideos: [
+      { id: '3C7_eJEmuGE', title: 'How to Install Your Rear-Facing Car Seat', source: 'Safe Kids Worldwide' },
+    ],
     body: `
       <p>Car seat misuse is extremely common — a few checks cover most of it.</p>
       <div class="diagram">
@@ -483,6 +504,9 @@ const TOPICS = [
       { title: "The 5 S's for Soothing Babies", source: 'Dr. Harvey Karp / Happiest Baby', url: 'https://www.happiestbaby.com/blogs/baby/the-5-s-s-for-soothing-babies' },
     ],
     video: { id: '6Cido2md4Y4', title: "The 5 S's to Soothe Your Baby", source: 'Dr. Harvey Karp / Happiest Baby' },
+    moreVideos: [
+      { id: 'j2C8MkY7Co8', title: 'How To Calm A Crying Baby — "The Hold" (Official)', source: 'Robert C. Hamilton, MD' },
+    ],
     body: `
       <p>All babies cry — it's their main communication tool. Occasional inconsolable crying spells, especially in the evening in the first months, are common and usually not a sign anything is wrong.</p>
       <h3>The "5 S's" (a well-known soothing framework)</h3>
@@ -508,6 +532,9 @@ const TOPICS = [
       { title: 'Tummy Time: Essential Guide for Parents', source: 'Pathways.org', url: 'https://pathways.org/topics-of-development/tummy-time' },
     ],
     video: { id: 'zQfuBFwVZ5E', title: 'How, When, and Where to Start Tummy Time with a Newborn', source: 'Pathways.org' },
+    moreVideos: [
+      { id: 'V7yLVmUhcZQ', title: 'Must-Know Tummy Time Positions', source: 'Emma Hubbard (parenting creator)' },
+    ],
     body: `
       <p>Tummy time — supervised time on the belly while awake — builds the neck, shoulder, and core strength baby needs for rolling, sitting, and crawling later on. It also helps prevent flat spots on the head from too much time on the back.</p>
       <h3>How to start</h3>

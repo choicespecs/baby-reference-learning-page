@@ -288,6 +288,14 @@ button:focus-visible,
   margin: var(--space-1) 0 0;
 }
 
+.more-videos {
+  margin: var(--space-4) 0;
+}
+
+.more-videos .resources-heading {
+  font-size: var(--text-base);
+}
+
 /* Diagrams */
 .diagram {
   background: var(--color-surface);

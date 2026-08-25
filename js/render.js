@@ -128,6 +128,28 @@ function videoHTML(video) {
   `;
 }
 
+function moreVideosHTML(moreVideos) {
+  if (!moreVideos || moreVideos.length === 0) return '';
+  const items = moreVideos
+    .map(
+      (v) => `
+        <li>
+          <a class="resource-link" href="https://www.youtube.com/watch?v=${encodeURIComponent(v.id)}" target="_blank" rel="noopener noreferrer">
+            <span class="resource-title">&#9654; ${escapeHtml(v.title)}</span>
+            <span class="resource-source">${escapeHtml(v.source)} &#8594;</span>
+          </a>
+        </li>
+      `
+    )
+    .join('');
+  return `
+    <div class="more-videos">
+      <h3 class="resources-heading">More Videos to Check Out</h3>
+      <ul class="resource-list">${items}</ul>
+    </div>
+  `;
+}
+
 function renderTopicDetail(topic) {
   const content = document.getElementById('content');
   const cat = categoryById(topic.category);
@@ -140,6 +162,7 @@ function renderTopicDetail(topic) {
     <h1 class="topic-title">${escapeHtml(topic.title)}</h1>
     <p class="topic-summary">${escapeHtml(topic.summary)}</p>
     ${videoHTML(topic.video)}
+    ${moreVideosHTML(topic.moreVideos)}
     <div class="topic-body">${topic.body}</div>
     ${resourcesHTML(topic.resources)}
     <div class="topic-tags">${tagsHTML(topic.tags)}</div>
