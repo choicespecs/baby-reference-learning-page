@@ -112,6 +112,22 @@ function resourcesHTML(resources) {
   `;
 }
 
+function videoHTML(video) {
+  if (!video) return '';
+  return `
+    <div class="video-embed">
+      <iframe
+        src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(video.id)}"
+        title="${escapeHtml(video.title)}"
+        loading="lazy"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <p class="video-caption">${escapeHtml(video.title)} &#8226; ${escapeHtml(video.source)}</p>
+  `;
+}
+
 function renderTopicDetail(topic) {
   const content = document.getElementById('content');
   const cat = categoryById(topic.category);
@@ -123,6 +139,7 @@ function renderTopicDetail(topic) {
     </div>
     <h1 class="topic-title">${escapeHtml(topic.title)}</h1>
     <p class="topic-summary">${escapeHtml(topic.summary)}</p>
+    ${videoHTML(topic.video)}
     <div class="topic-body">${topic.body}</div>
     ${resourcesHTML(topic.resources)}
     <div class="topic-tags">${tagsHTML(topic.tags)}</div>

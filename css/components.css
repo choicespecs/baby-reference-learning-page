@@ -262,6 +262,32 @@ button:focus-visible,
   border-top: 1px solid var(--color-border);
 }
 
+/* Video embeds */
+.video-embed {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  background: var(--color-text);
+  margin-top: var(--space-3);
+}
+
+.video-embed iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-caption {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  margin: var(--space-1) 0 0;
+}
+
 /* Diagrams */
 .diagram {
   background: var(--color-surface);

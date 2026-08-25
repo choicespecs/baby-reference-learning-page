@@ -39,6 +39,7 @@ const TOPICS = [
     resources: [
       { title: 'Good Night, Sleep Tight: How to Swaddle Your Baby', source: 'HealthyChildren.org (AAP)', url: 'https://www.healthychildren.org/English/ages-stages/baby/sleep/Pages/good-night-sleep-tight.aspx' },
     ],
+    video: { id: 'JGHdv6zd79M', title: 'Swaddling', source: "Stanford Medicine Children's Health" },
     body: `
       <p>Swaddling recreates the snug feeling of the womb and can help calm a newborn and improve sleep. Done incorrectly, it can be a safety or hip-development risk — a few rules make it safe.</p>
       <h3>How to do it safely</h3>
@@ -95,6 +96,7 @@ const TOPICS = [
     resources: [
       { title: 'Getting a Good Breastfeeding Latch & What To Know About Latch', source: 'Cleveland Clinic', url: 'https://my.clevelandclinic.org/health/articles/breastfeeding-latch' },
     ],
+    video: { id: 'whkO4hUbVGw', title: 'Latching in a Laid-Back Position', source: 'La Leche League Canada' },
     body: `
       <p>Whether breastfeeding, bottle feeding, or both, newborns eat often — typically <strong>8 to 12 times in 24 hours</strong> in the first weeks, roughly every 2–3 hours, including overnight.</p>
       <h3>Breastfeeding basics</h3>
@@ -121,6 +123,7 @@ const TOPICS = [
     resources: [
       { title: 'Burping Your Baby: Techniques, Tips and Timing', source: 'Cleveland Clinic', url: 'https://health.clevelandclinic.org/how-to-burp-a-baby' },
     ],
+    video: { id: '75oi_edksLk', title: 'How to Burp a Baby', source: 'HCA HealthONE' },
     body: `
       <p>Babies swallow air while feeding, especially with a bottle, which can cause fussiness or spit-up if not released. Try burping midway through a feed and again at the end.</p>
       <h3>Common positions</h3>
@@ -264,6 +267,7 @@ const TOPICS = [
     resources: [
       { title: 'How to Change a Diaper: Step-by-Step Guide', source: 'Pampers', url: 'https://www.pampers.com/en-us/baby/diapering/article/how-to-change-a-diaper' },
     ],
+    video: { id: 'euDUqiYdh3U', title: 'Diapering a Newborn', source: "Nicklaus Children's Hospital" },
     body: `
       <p>You'll do this 6–10+ times a day at first, so a smooth routine helps.</p>
       <h3>Steps</h3>
@@ -309,6 +313,7 @@ const TOPICS = [
     resources: [
       { title: 'Bath Time for Baby: When and How To Bathe Your Newborn', source: 'Cleveland Clinic', url: 'https://health.clevelandclinic.org/how-to-bathe-newborn' },
     ],
+    video: { id: 'dfCCbVWrdPw', title: 'How to Give Infant a Sponge Bath', source: 'CloudMom' },
     body: `
       <p>Newborns don't need daily baths — their skin can dry out, and they don't get very dirty. <strong>2–3 times a week</strong> is generally plenty (with regular face/diaper-area cleaning in between).</p>
       <h3>Before the umbilical cord falls off</h3>
@@ -356,6 +361,7 @@ const TOPICS = [
     resources: [
       { title: 'How to Take a Rectal Temperature', source: 'Nemours KidsHealth', url: 'https://kidshealth.org/en/parents/rectal-temperature.html' },
     ],
+    video: { id: 'OynykCxWls0', title: "Taking a Newborn's Temperature", source: 'Mount Sinai Parenting Center' },
     body: `
       <p>For babies under 3 months, a <strong>rectal temperature</strong> is the most accurate method and the one pediatricians rely on for fever decisions — forehead/ear thermometers can be less reliable at this age.</p>
       <h3>How to take a rectal temperature</h3>
@@ -376,6 +382,7 @@ const TOPICS = [
     resources: [
       { title: 'How to Install a Rear-Facing Only Infant Car Seat', source: 'NHTSA', url: 'https://www.nhtsa.gov/how-install-rear-facing-only-infant-car-seat' },
     ],
+    video: { id: 'i3VRVTdzFio', title: 'Installing a Rear-Facing Car Safety Seat', source: 'American Academy of Pediatrics' },
     body: `
       <p>Car seat misuse is extremely common — a few checks cover most of it.</p>
       <div class="diagram">
@@ -446,6 +453,7 @@ const TOPICS = [
     resources: [
       { title: "The 5 S's for Soothing Babies", source: 'Dr. Harvey Karp / Happiest Baby', url: 'https://www.happiestbaby.com/blogs/baby/the-5-s-s-for-soothing-babies' },
     ],
+    video: { id: '6Cido2md4Y4', title: "The 5 S's to Soothe Your Baby", source: 'Dr. Harvey Karp / Happiest Baby' },
     body: `
       <p>All babies cry — it's their main communication tool. Occasional inconsolable crying spells, especially in the evening in the first months, are common and usually not a sign anything is wrong.</p>
       <h3>The "5 S's" (a well-known soothing framework)</h3>
@@ -470,6 +478,7 @@ const TOPICS = [
     resources: [
       { title: 'Tummy Time: Essential Guide for Parents', source: 'Pathways.org', url: 'https://pathways.org/topics-of-development/tummy-time' },
     ],
+    video: { id: 'zQfuBFwVZ5E', title: 'How, When, and Where to Start Tummy Time with a Newborn', source: 'Pathways.org' },
     body: `
       <p>Tummy time — supervised time on the belly while awake — builds the neck, shoulder, and core strength baby needs for rolling, sitting, and crawling later on. It also helps prevent flat spots on the head from too much time on the back.</p>
       <h3>How to start</h3>
