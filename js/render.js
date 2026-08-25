@@ -28,17 +28,29 @@ function cardHTML(topic) {
   `;
 }
 
-function renderSidebar(activeCategoryId) {
+function renderSidebar(activeCategoryId, activeTopicId) {
   const sidebar = document.getElementById('sidebar');
-  const html = CATEGORIES.map((cat) => {
-    const active = cat.id === activeCategoryId ? ' active' : '';
-    return `<a class="nav-link${active}" href="#/category/${cat.id}">${escapeHtml(cat.label)}</a>`;
+
+  const categoriesHTML = CATEGORIES.map((cat) => {
+    const catActive = cat.id === activeCategoryId && !activeTopicId ? ' active' : '';
+    const topicsHTML = TOPICS.filter((t) => t.category === cat.id)
+      .map((t) => {
+        const topicActive = t.id === activeTopicId ? ' active' : '';
+        return `<a class="nav-topic-link${topicActive}" href="#/topic/${t.id}">${escapeHtml(t.title)}</a>`;
+      })
+      .join('');
+    return `
+      <div class="nav-category">
+        <a class="nav-cat-link${catActive}" href="#/category/${cat.id}">${escapeHtml(cat.label)}</a>
+        <div class="nav-topic-list">${topicsHTML}</div>
+      </div>
+    `;
   }).join('');
+
   sidebar.innerHTML = `
-    <div class="nav-group-label">Browse</div>
-    <a class="nav-link${activeCategoryId ? '' : ' active'}" href="#/">All Topics</a>
+    <a class="nav-link${!activeCategoryId && !activeTopicId ? ' active' : ''}" href="#/">All Topics</a>
     <div class="nav-group-label">Categories</div>
-    ${html}
+    ${categoriesHTML}
   `;
 }
 

@@ -25,7 +25,7 @@ function handleRoute() {
 
   if (route.view === 'topic') {
     const topic = topicById(route.id);
-    renderSidebar(topic ? topic.category : null);
+    renderSidebar(topic ? topic.category : null, route.id);
     if (topic) {
       renderTopicDetail(topic);
       document.title = `${topic.title} — Baby Reference`;
