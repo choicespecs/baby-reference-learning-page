@@ -36,6 +36,9 @@ const TOPICS = [
     title: 'Swaddling Safely',
     tags: ['newborn', 'sleep', 'soothing'],
     summary: 'A snug swaddle can soothe a newborn, but hips need room to move and it must stop once baby can roll.',
+    resources: [
+      { title: 'Good Night, Sleep Tight: How to Swaddle Your Baby', source: 'HealthyChildren.org (AAP)', url: 'https://www.healthychildren.org/English/ages-stages/baby/sleep/Pages/good-night-sleep-tight.aspx' },
+    ],
     body: `
       <p>Swaddling recreates the snug feeling of the womb and can help calm a newborn and improve sleep. Done incorrectly, it can be a safety or hip-development risk — a few rules make it safe.</p>
       <h3>How to do it safely</h3>
@@ -89,6 +92,9 @@ const TOPICS = [
     title: 'How to Feed a Newborn',
     tags: ['feeding', 'breastfeeding', 'bottle'],
     summary: 'Newborns feed 8–12 times a day, whether breast or bottle — feeding on demand is normal.',
+    resources: [
+      { title: 'Getting a Good Breastfeeding Latch & What To Know About Latch', source: 'Cleveland Clinic', url: 'https://my.clevelandclinic.org/health/articles/breastfeeding-latch' },
+    ],
     body: `
       <p>Whether breastfeeding, bottle feeding, or both, newborns eat often — typically <strong>8 to 12 times in 24 hours</strong> in the first weeks, roughly every 2–3 hours, including overnight.</p>
       <h3>Breastfeeding basics</h3>
@@ -112,6 +118,9 @@ const TOPICS = [
     title: 'Burping Techniques',
     tags: ['feeding', 'burping', 'gas'],
     summary: 'Burp midway through and after feeds — a few common holds make it easier.',
+    resources: [
+      { title: 'Burping Your Baby: Techniques, Tips and Timing', source: 'Cleveland Clinic', url: 'https://health.clevelandclinic.org/how-to-burp-a-baby' },
+    ],
     body: `
       <p>Babies swallow air while feeding, especially with a bottle, which can cause fussiness or spit-up if not released. Try burping midway through a feed and again at the end.</p>
       <h3>Common positions</h3>
@@ -188,8 +197,22 @@ const TOPICS = [
     title: 'Safe Sleep Guidelines',
     tags: ['sleep', 'safety', 'SIDS'],
     summary: 'Alone, on their Back, in a Crib with nothing else in it — the "ABC" of safe sleep.',
+    resources: [
+      { title: 'Safe Sleep', source: 'American Academy of Pediatrics', url: 'https://www.aap.org/en/patient-care/safe-sleep/' },
+    ],
     body: `
       <p>These guidelines (from pediatric safe-sleep recommendations) are designed to reduce the risk of SIDS (Sudden Infant Death Syndrome) and accidental suffocation. A simple way to remember them: <strong>A-B-C — Alone, on their Back, in a Crib.</strong></p>
+      <div class="diagram">
+        <svg viewBox="0 0 400 250" role="img" aria-label="Diagram of a safe crib: baby alone on their back, firm flat mattress, no pillows, blankets, bumpers, or toys">
+          <text x="200" y="22" text-anchor="middle" font-size="13" fill="var(--color-accent-hover)" font-family="Inter, sans-serif" font-weight="600">Baby alone, on their back</text>
+          <text x="200" y="42" text-anchor="middle" font-size="11" fill="var(--color-text-muted)" font-family="Inter, sans-serif">No pillows &#8226; No loose blankets &#8226; No bumpers or toys</text>
+          <rect x="20" y="58" width="360" height="172" rx="10" fill="none" stroke="var(--color-border)" stroke-width="3"/>
+          <rect x="36" y="198" width="328" height="18" rx="4" fill="var(--color-accent-soft)" stroke="var(--color-border)" stroke-width="2"/>
+          <ellipse cx="200" cy="138" rx="27" ry="23" fill="var(--color-surface)" stroke="var(--color-text)" stroke-width="2.5"/>
+          <rect x="148" y="149" width="104" height="52" rx="22" fill="var(--color-surface)" stroke="var(--color-text)" stroke-width="2.5"/>
+          <text x="200" y="215" text-anchor="middle" font-size="11" fill="var(--color-text-muted)" font-family="Inter, sans-serif">Firm, flat mattress — fitted sheet only</text>
+        </svg>
+      </div>
       <ul>
         <li><strong>Alone:</strong> No pillows, blankets, bumpers, stuffed animals, or other soft objects in the sleep space. Room-sharing (crib/bassinet in your room) is recommended for at least the first 6 months — but not bed-sharing.</li>
         <li><strong>Back:</strong> Always place baby on their back to sleep, for every sleep, until at least their first birthday — this is the single biggest risk-reduction factor.</li>
@@ -238,6 +261,9 @@ const TOPICS = [
     title: 'How to Change a Diaper',
     tags: ['diapering', 'basics'],
     summary: 'Front to back for wiping, and a few tricks to avoid surprise messes mid-change.',
+    resources: [
+      { title: 'How to Change a Diaper: Step-by-Step Guide', source: 'Pampers', url: 'https://www.pampers.com/en-us/baby/diapering/article/how-to-change-a-diaper' },
+    ],
     body: `
       <p>You'll do this 6–10+ times a day at first, so a smooth routine helps.</p>
       <h3>Steps</h3>
@@ -280,6 +306,9 @@ const TOPICS = [
     title: 'Bathing a Newborn',
     tags: ['bathing', 'hygiene', 'newborn'],
     summary: 'Sponge baths until the cord falls off, then 2–3 tub baths a week is plenty.',
+    resources: [
+      { title: 'Bath Time for Baby: When and How To Bathe Your Newborn', source: 'Cleveland Clinic', url: 'https://health.clevelandclinic.org/how-to-bathe-newborn' },
+    ],
     body: `
       <p>Newborns don't need daily baths — their skin can dry out, and they don't get very dirty. <strong>2–3 times a week</strong> is generally plenty (with regular face/diaper-area cleaning in between).</p>
       <h3>Before the umbilical cord falls off</h3>
@@ -324,6 +353,9 @@ const TOPICS = [
     title: "Taking a Baby's Temperature",
     tags: ['health', 'fever', 'how-to'],
     summary: 'A rectal thermometer is most accurate for babies under 3 months.',
+    resources: [
+      { title: 'How to Take a Rectal Temperature', source: 'Nemours KidsHealth', url: 'https://kidshealth.org/en/parents/rectal-temperature.html' },
+    ],
     body: `
       <p>For babies under 3 months, a <strong>rectal temperature</strong> is the most accurate method and the one pediatricians rely on for fever decisions — forehead/ear thermometers can be less reliable at this age.</p>
       <h3>How to take a rectal temperature</h3>
@@ -341,8 +373,25 @@ const TOPICS = [
     title: 'Car Seat Safety Basics',
     tags: ['safety', 'car seat'],
     summary: 'Rear-facing in the back seat, chest clip at armpit level, and the pinch test for strap tightness.',
+    resources: [
+      { title: 'How to Install a Rear-Facing Only Infant Car Seat', source: 'NHTSA', url: 'https://www.nhtsa.gov/how-install-rear-facing-only-infant-car-seat' },
+    ],
     body: `
       <p>Car seat misuse is extremely common — a few checks cover most of it.</p>
+      <div class="diagram">
+        <svg viewBox="0 0 400 240" role="img" aria-label="Diagram of a rear-facing infant car seat showing harness strap at or below shoulder level and chest clip at armpit level">
+          <path d="M110 40 C60 40 50 100 60 150 C65 185 90 210 140 215 L260 215 C300 210 310 170 300 130 C290 90 260 60 220 45 Z" fill="var(--color-surface)" stroke="var(--color-text)" stroke-width="2.5"/>
+          <ellipse cx="185" cy="90" rx="30" ry="26" fill="var(--color-accent-soft)" stroke="var(--color-text)" stroke-width="2.5"/>
+          <rect x="160" y="112" width="60" height="70" rx="18" fill="var(--color-accent-soft)" stroke="var(--color-text)" stroke-width="2.5"/>
+          <line x1="165" y1="128" x2="150" y2="180" stroke="var(--color-accent-hover)" stroke-width="4" stroke-linecap="round"/>
+          <line x1="205" y1="128" x2="220" y2="180" stroke="var(--color-accent-hover)" stroke-width="4" stroke-linecap="round"/>
+          <rect x="172" y="150" width="26" height="14" rx="4" fill="var(--color-accent)" stroke="var(--color-accent-hover)" stroke-width="1.5"/>
+          <line x1="60" y1="128" x2="320" y2="128" stroke="var(--color-border)" stroke-width="1.5" stroke-dasharray="5 4"/>
+          <text x="325" y="132" font-size="11" fill="var(--color-text-muted)" font-family="Inter, sans-serif">Shoulder level</text>
+          <text x="205" y="150" font-size="11" fill="var(--color-accent-hover)" font-family="Inter, sans-serif" font-weight="600">&#8592; Chest clip at armpit level</text>
+          <text x="200" y="20" text-anchor="middle" font-size="12" fill="var(--color-text-muted)" font-family="Inter, sans-serif">Rear-facing — harness at or just below shoulders</text>
+        </svg>
+      </div>
       <ul>
         <li><strong>Rear-facing</strong> in the back seat for infants — keep rear-facing as long as the seat's height/weight limits allow (often well past age 1).</li>
         <li><strong>Harness straps</strong> at or just below shoulder level for rear-facing; snug enough that you can't pinch excess webbing at the shoulder (the "pinch test").</li>
@@ -394,6 +443,9 @@ const TOPICS = [
     title: 'Soothing a Crying Baby / Colic',
     tags: ['crying', 'colic', 'soothing'],
     summary: 'The "5 S\'s" (swaddle, side, shush, swing, suck) are a well-known starting toolkit.',
+    resources: [
+      { title: "The 5 S's for Soothing Babies", source: 'Dr. Harvey Karp / Happiest Baby', url: 'https://www.happiestbaby.com/blogs/baby/the-5-s-s-for-soothing-babies' },
+    ],
     body: `
       <p>All babies cry — it's their main communication tool. Occasional inconsolable crying spells, especially in the evening in the first months, are common and usually not a sign anything is wrong.</p>
       <h3>The "5 S's" (a well-known soothing framework)</h3>
@@ -415,6 +467,9 @@ const TOPICS = [
     title: 'Tummy Time',
     tags: ['development', 'motor skills'],
     summary: 'A few minutes a day, starting day one, builds the neck/shoulder strength babies need for milestones ahead.',
+    resources: [
+      { title: 'Tummy Time: Essential Guide for Parents', source: 'Pathways.org', url: 'https://pathways.org/topics-of-development/tummy-time' },
+    ],
     body: `
       <p>Tummy time — supervised time on the belly while awake — builds the neck, shoulder, and core strength baby needs for rolling, sitting, and crawling later on. It also helps prevent flat spots on the head from too much time on the back.</p>
       <h3>How to start</h3>
