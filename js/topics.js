@@ -259,7 +259,7 @@ const TOPICS = [
     resources: [
       { title: 'Safe to Sleep Campaign', source: 'NICHD / NIH', url: 'https://safetosleep.nichd.nih.gov/' },
       { title: 'What is SIDS?', source: 'American SIDS Institute', url: 'https://sids.org/what-is-sids/' },
-      { title: 'Sudden Unexpected Infant Death and Sudden Infant Death Syndrome', source: 'CDC', url: 'https://www.cdc.gov/sids/index.html' },
+      { title: 'About SUID and SIDS', source: 'CDC', url: 'https://www.cdc.gov/sudden-infant-death/about/index.html' },
     ],
     body: `
       <p><strong>SIDS (Sudden Infant Death Syndrome)</strong> is the sudden, unexplained death of an otherwise healthy baby under 1 year old, usually during sleep, that remains unexplained even after a full investigation (autopsy, death scene review, and clinical history). It's understandably one of the scarier things new parents hear about — knowing the facts, real risk factors, and what actually helps can make it feel more manageable.</p>
