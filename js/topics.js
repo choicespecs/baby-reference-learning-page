@@ -211,6 +211,7 @@ const TOPICS = [
     summary: 'Alone, on their Back, in a Crib with nothing else in it — the "ABC" of safe sleep.',
     resources: [
       { title: 'Safe Sleep', source: 'American Academy of Pediatrics', url: 'https://www.aap.org/en/patient-care/safe-sleep/' },
+      { title: 'Safe to Sleep Campaign', source: 'NICHD / NIH', url: 'https://safetosleep.nichd.nih.gov/' },
     ],
     body: `
       <p>These guidelines (from pediatric safe-sleep recommendations) are designed to reduce the risk of SIDS (Sudden Infant Death Syndrome) and accidental suffocation. A simple way to remember them: <strong>A-B-C — Alone, on their Back, in a Crib.</strong></p>
@@ -236,6 +237,74 @@ const TOPICS = [
         <li>A sleep sack (wearable blanket) is a safe alternative to loose blankets.</li>
         <li>Offering a pacifier at sleep time is associated with reduced SIDS risk (wait until breastfeeding is established, if applicable).</li>
       </ul>
+      <h3>Additional risk-reducing practices</h3>
+      <ul>
+        <li>Avoid exposing baby to smoke — during pregnancy and after birth, including secondhand smoke. This is one of the biggest modifiable risk factors.</li>
+        <li>Breastfeeding, if possible, is associated with a lower SIDS risk.</li>
+        <li>Never place baby to sleep in a car seat, swing, stroller, baby carrier, or other sitting/inclined device — if baby falls asleep in one, move them to a flat, firm sleep surface as soon as it's safe to do so.</li>
+        <li>Avoid alcohol and drug use around caregiving, and never bed-share if you or anyone in the bed is impaired or extremely exhausted.</li>
+        <li>Skip products marketed as reducing SIDS risk (positioners, wedges, special mattresses/monitors) — none are proven safe or effective, and some (like positioners) are themselves a suffocation hazard.</li>
+        <li>Keep up with well-baby checkups and the recommended vaccination schedule — both are associated with lower SIDS risk.</li>
+        <li>Awake, supervised tummy time is still important and encouraged (see <a href="#/topic/tummy-time">Tummy Time</a>) — it's sleep position that matters, not awake time.</li>
+      </ul>
+      <div class="callout">See <a href="#/topic/understanding-sids">Understanding SIDS</a> for more on what SIDS is, who's at higher risk, and common myths worth knowing.</div>
+    `,
+  },
+  {
+    id: 'understanding-sids',
+    category: 'sleep',
+    title: 'Understanding SIDS (Sudden Infant Death Syndrome)',
+    tags: ['SIDS', 'sleep', 'safety', 'warning signs'],
+    summary: 'SIDS is the sudden, unexplained death of an otherwise healthy baby, most common between 1–4 months — safe sleep practices meaningfully lower the risk.',
+    resources: [
+      { title: 'Safe to Sleep Campaign', source: 'NICHD / NIH', url: 'https://safetosleep.nichd.nih.gov/' },
+      { title: 'What is SIDS?', source: 'American SIDS Institute', url: 'https://sids.org/what-is-sids/' },
+      { title: 'Sudden Unexpected Infant Death and Sudden Infant Death Syndrome', source: 'CDC', url: 'https://www.cdc.gov/sids/index.html' },
+    ],
+    body: `
+      <p><strong>SIDS (Sudden Infant Death Syndrome)</strong> is the sudden, unexplained death of an otherwise healthy baby under 1 year old, usually during sleep, that remains unexplained even after a full investigation (autopsy, death scene review, and clinical history). It's understandably one of the scarier things new parents hear about — knowing the facts, real risk factors, and what actually helps can make it feel more manageable.</p>
+      <h3>SIDS vs. SUID</h3>
+      <p>SIDS is one type of <strong>SUID (Sudden Unexpected Infant Death)</strong> — an umbrella term that also includes accidental suffocation/strangulation in a sleep environment and deaths of undetermined cause. The safe sleep practices below (see <a href="#/topic/safe-sleep">Safe Sleep Guidelines</a>) reduce risk across all of these categories, not just SIDS specifically, which is part of why they're emphasized so heavily.</p>
+      <h3>Age pattern</h3>
+      <ul>
+        <li>Rare in the first month of life.</li>
+        <li>Risk rises after that and <strong>peaks between about 1 and 4 months old</strong>.</li>
+        <li>About 90% of SIDS cases occur before 6 months.</li>
+        <li>Becomes uncommon after 8–12 months.</li>
+      </ul>
+      <h3>Risk factors</h3>
+      <p><strong>Non-modifiable (can't be changed, but worth knowing):</strong></p>
+      <ul>
+        <li>Premature birth or low birth weight</li>
+        <li>Slightly higher risk in male babies</li>
+        <li>A sibling who had SIDS, or other family history</li>
+      </ul>
+      <p><strong>Modifiable (things you have control over):</strong></p>
+      <ul>
+        <li>Stomach or side sleeping instead of back sleeping</li>
+        <li>Soft bedding, loose blankets, pillows, or bumpers in the sleep space</li>
+        <li>Overheating/overbundling</li>
+        <li>Bed-sharing, especially with soft bedding or an impaired caregiver</li>
+        <li>Smoke exposure during pregnancy or after birth</li>
+        <li>Lack of prenatal care</li>
+      </ul>
+      <h3>What actually helps (protective factors)</h3>
+      <ul>
+        <li>Back sleeping for every sleep (the single biggest factor — see <a href="#/topic/safe-sleep">Safe Sleep Guidelines</a>)</li>
+        <li>A firm, flat sleep surface with nothing else in it</li>
+        <li>Room-sharing without bed-sharing</li>
+        <li>Breastfeeding</li>
+        <li>Offering a pacifier at sleep time</li>
+        <li>Avoiding smoke, alcohol, and drug exposure</li>
+        <li>Regular prenatal care and staying current on well-baby visits/vaccinations</li>
+      </ul>
+      <h3>Common myths</h3>
+      <ul>
+        <li><strong>"Vaccines cause SIDS."</strong> Not true — large studies have found no causal link, and vaccination is actually associated with a lower SIDS risk.</li>
+        <li><strong>"Back sleeping increases choking risk if baby spits up."</strong> Not true — a healthy baby's airway anatomy and gag reflex protect against choking when sleeping on their back, even after spit-up. This is well studied and is exactly why back sleeping is recommended over stomach or side sleeping.</li>
+        <li><strong>"If I do everything right, it can't happen."</strong> Safe sleep practices meaningfully lower the statistical risk, which is why they're worth following closely — but SIDS is still labeled "unexplained" because it isn't fully preventable with certainty. That's not a reason to skip the guidelines; it's the reason they exist.</li>
+      </ul>
+      <div class="callout">It's normal for this topic to feel anxiety-inducing. Following the safe sleep guidelines consistently is the most effective thing you can do, and it's okay to ask your pediatrician about SIDS risk directly — many parents do, and providers expect the question. If your baby was born preterm or at a low birth weight, mention it at your first well-baby visit so your pediatrician can flag any extra precautions.</div>
     `,
   },
   {
