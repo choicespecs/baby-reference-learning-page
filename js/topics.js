@@ -568,27 +568,50 @@ const TOPICS = [
     category: 'soothing-development',
     title: 'Soothing a Crying Baby / Colic',
     tags: ['crying', 'colic', 'soothing'],
-    summary: 'The "5 S\'s" (swaddle, side, shush, swing, suck) are a well-known starting toolkit.',
-    resources: [
-      { title: "The 5 S's for Soothing Babies", source: 'Dr. Harvey Karp / Happiest Baby', url: 'https://www.happiestbaby.com/blogs/baby/the-5-s-s-for-soothing-babies' },
-    ],
-    video: { id: '6Cido2md4Y4', title: "The 5 S's to Soothe Your Baby", source: 'Dr. Harvey Karp / Happiest Baby' },
-    moreVideos: [
-      { id: 'j2C8MkY7Co8', title: 'How To Calm A Crying Baby — "The Hold" (Official)', source: 'Robert C. Hamilton, MD' },
-    ],
+    summary: 'A few well-known soothing frameworks — like the "5 S\'s" — are a good starting toolkit.',
     body: `
       <p>All babies cry — it's their main communication tool. Occasional inconsolable crying spells, especially in the evening in the first months, are common and usually not a sign anything is wrong.</p>
-      <h3>The "5 S's" (a well-known soothing framework)</h3>
+      <p>See <a href="#/topic/happiest-baby-5-ss">The Happiest Baby on the Block: The "5 S's"</a> below for a full, well-known soothing framework developed by Dr. Harvey Karp.</p>
+      <h3>Another technique: "The Hold" (Dr. Robert Hamilton)</h3>
+      <p>Separate from the 5 S's, pediatrician Dr. Robert Hamilton popularized a specific hold-and-jiggle technique for calming crying babies — fold baby's arms across their chest, cradle the chin/jaw in one hand, support the bottom with the other, tip forward about 45°, and gently jiggle. It's a different method from a different source; watch his official demonstration before trying it.</p>
       <ul>
-        <li><strong>Swaddle:</strong> Snug wrapping (see Swaddling Safely) recreates womb-like security.</li>
-        <li><strong>Side/stomach position (while awake and held):</strong> Holding baby on their side or front in your arms (never for sleep) can be calming — always back to back for actual sleep.</li>
-        <li><strong>Shush:</strong> Loud, close white noise mimics womb sounds.</li>
-        <li><strong>Swing:</strong> Gentle, rhythmic motion (rocking, a car ride, a baby swing).</li>
-        <li><strong>Suck:</strong> Nursing, a bottle, or a pacifier — sucking is naturally calming.</li>
+        <li><a href="https://www.youtube.com/watch?v=j2C8MkY7Co8" target="_blank" rel="noopener noreferrer">How To Calm A Crying Baby — "The Hold" (Official) &#8594;</a> — Robert C. Hamilton, MD</li>
       </ul>
       <h3>About colic</h3>
       <p>"Colic" generally describes crying for 3+ hours a day, 3+ days a week, for 3+ weeks in an otherwise healthy baby. It typically peaks around 6 weeks and improves by 3–4 months. It's exhausting but not dangerous — if it's affecting your ability to cope, it's worth telling your pediatrician, both for baby's sake and yours.</p>
       <div class="callout">If crying is unusual in pitch (very high-pitched), paired with fever, vomiting, or your baby seems to be in pain (arching, pulling legs up), call your pediatrician rather than assuming it's typical fussiness.</div>
+    `,
+  },
+  {
+    id: 'happiest-baby-5-ss',
+    category: 'soothing-development',
+    title: "The Happiest Baby on the Block: The \"5 S's\"",
+    tags: ['crying', 'colic', 'soothing', "5 s's", 'harvey karp'],
+    summary: 'Dr. Harvey Karp\'s "5 S\'s" (swaddle, side/stomach, shush, swing, suck) recreate the womb to calm crying.',
+    resources: [
+      { title: "The 5 S's for Soothing Babies", source: 'Happiest Baby (Dr. Harvey Karp)', url: 'https://www.happiestbaby.com/blogs/baby/the-5-s-s-for-soothing-babies' },
+      { title: 'The Happiest Baby on the Block (book)', source: 'Happiest Baby (Dr. Harvey Karp)', url: 'https://www.happiestbaby.com/products/the-happiest-baby-book-paperback' },
+      { title: 'Happiest Baby Help Center', source: 'Happiest Baby', url: 'https://www.happiestbaby.com/help-center' },
+    ],
+    video: { id: '6Cido2md4Y4', title: "The 5 S's to Soothe Your Baby", source: 'Dr. Harvey Karp / Happiest Baby' },
+    body: `
+      <p>Dr. Harvey Karp, a pediatrician, developed the "Happiest Baby on the Block" method around a core idea: human babies are born about three months "early" compared to other mammals, and they retain a built-in calming reflex that responds to womb-like sensations. The "5 S's" are five specific techniques, meant to be used together, that recreate those sensations.</p>
+      <h3>The 5 S's</h3>
+      <ul>
+        <li><strong>Swaddle:</strong> Snug wrapping (see <a href="#/topic/swaddling-safely">Swaddling Safely</a>) recreates womb-like security and restricts the startle (Moro) reflex that can wake or upset a newborn.</li>
+        <li><strong>Side/stomach position (while awake and held):</strong> Holding baby on their side or front in your arms — never for sleep — can be calming; always place baby on their back for actual sleep.</li>
+        <li><strong>Shush:</strong> Loud, close white noise mimics the whooshing sound of the womb, which is louder than most people expect.</li>
+        <li><strong>Swing:</strong> Small, fast, rhythmic motion (more of a jiggle than a rock) mimics movement felt in the womb.</li>
+        <li><strong>Suck:</strong> Nursing, a bottle, or a pacifier — sucking triggers a naturally calming reflex.</li>
+      </ul>
+      <h3>Where to go deeper</h3>
+      <p>Dr. Karp's book and video course go through each "S" in more detail, including how to combine them and troubleshoot when they don't seem to be working. Happiest Baby (the company Dr. Karp founded) also sells products built around this method, if you want extra help:</p>
+      <ul>
+        <li><a href="https://www.happiestbaby.com/products/snoo-smart-bassinet" target="_blank" rel="noopener noreferrer">SNOO Smart Sleeper &#8594;</a> — a responsive bassinet that automates swaddle, shush, and swing/rocking.</li>
+        <li><a href="https://www.happiestbaby.com/products/sleepea-swaddle" target="_blank" rel="noopener noreferrer">Sleepea Swaddle &#8594;</a> — a hip-safe swaddle designed for the "S" above.</li>
+        <li><a href="https://www.happiestbaby.com/products/snoobie-white-noise-machine" target="_blank" rel="noopener noreferrer">SNOObie White Noise Machine &#8594;</a> — a dedicated sound machine for the "shush" S.</li>
+      </ul>
+      <div class="callout">These products are optional extras, not required — most parents can do all 5 S's by hand with no purchase needed. See <a href="#/topic/soothing-crying-colic">Soothing a Crying Baby / Colic</a> for the bigger picture, including when crying may need a pediatrician's attention.</div>
     `,
   },
   {
