@@ -642,10 +642,26 @@ const TOPICS = [
     id: 'milestones-first-year',
     category: 'soothing-development',
     title: 'Developmental Milestones by Month (0–12)',
-    tags: ['milestones', 'development'],
-    summary: 'A general guide — babies vary widely, and ranges matter more than exact ages.',
+    tags: ['milestones', 'development', 'month by month', 'first year'],
+    summary: 'What babies typically do each month of the first year. Babies vary a lot, so treat these as ranges, not deadlines.',
+    resources: [
+      { title: "CDC's Developmental Milestones (checklists by age)", source: 'CDC: Learn the Signs. Act Early.', url: 'https://www.cdc.gov/act-early/milestones/index.html' },
+      { title: 'Milestone Tracker App (free, iOS & Android)', source: 'CDC: Learn the Signs. Act Early.', url: 'https://www.cdc.gov/act-early/milestones-app/index.html' },
+      { title: 'Developmental Milestones: 12 Months', source: 'HealthyChildren.org (AAP)', url: 'https://www.healthychildren.org/English/ages-stages/baby/Pages/Developmental-Milestones-12-Months.aspx' },
+      { title: 'Baby Milestones by Age (with video clips)', source: 'Pathways.org', url: 'https://pathways.org/track/milestones' },
+      { title: 'Developmental Milestones for Baby', source: 'March of Dimes', url: 'https://www.marchofdimes.org/find-support/topics/parenthood/developmental-milestones-baby' },
+      { title: 'Developmental Milestones Record: 12 Months', source: 'MedlinePlus (NIH)', url: 'https://medlineplus.gov/ency/article/002005.htm' },
+    ],
+    video: { id: 'Oh_UXzp_vsk', title: "Important Motor Milestones: Baby's First Year Part 1", source: 'Pathways.org' },
+    moreVideos: [
+      { id: 'BF6wh8Kz-RU', title: '0–3 Month Old Motor Milestones', source: 'Pathways.org' },
+      { id: 'CZRgA9-cMkw', title: '0–3 Month Old Communication Milestones', source: 'Pathways.org' },
+      { id: 'd0FGHFrMRXI', title: 'The 4 to 6 Month Baby Communication Milestones to Look For', source: 'Pathways.org' },
+      { id: 'DulpeXPQe64', title: '7–9 Month Old Motor Milestones', source: 'Pathways.org' },
+    ],
     body: `
-      <p>Every baby develops at their own pace — these are general ranges, not deadlines. Bring concerns to your pediatrician's well-baby visits, where development is checked at every stage.</p>
+      <p>Every baby develops at their own pace. These are typical patterns, not deadlines. Sources disagree a little on the exact month for some skills, especially rolling and sitting, and that's normal. If your baby was born early, count milestones from the due date ("corrected age"), not the birthday. Your pediatrician checks development at every well-baby visit, so bring your questions there.</p>
+      <p>Want the same information grouped by skill instead of by month? See <a href="#/topic/milestones-by-area">Milestones by Area &amp; Key Stages</a>.</p>
       <div class="diagram">
         <svg viewBox="0 0 600 210" role="img" aria-label="Timeline of general developmental milestone ranges from 1 to 12 months">
           <line x1="40" y1="105" x2="560" y2="105" stroke="var(--color-border)" stroke-width="3"/>
@@ -660,11 +676,11 @@ const TOPICS = [
 
             <circle cx="300" cy="105" r="7" fill="var(--color-accent)"/>
             <text x="300" y="130" text-anchor="middle" font-size="11" font-weight="600" fill="var(--color-text)">5&#8211;6 mo</text>
-            <text x="300" y="85" text-anchor="middle" font-size="10" fill="var(--color-text-muted)">Rolls over</text>
+            <text x="300" y="85" text-anchor="middle" font-size="10" fill="var(--color-text-muted)">Rolls &amp; sits</text>
 
             <circle cx="430" cy="105" r="7" fill="var(--color-accent)"/>
             <text x="430" y="130" text-anchor="middle" font-size="11" font-weight="600" fill="var(--color-text)">7&#8211;9 mo</text>
-            <text x="430" y="150" text-anchor="middle" font-size="10" fill="var(--color-text-muted)">Sits alone</text>
+            <text x="430" y="150" text-anchor="middle" font-size="10" fill="var(--color-text-muted)">Crawls</text>
 
             <circle cx="560" cy="105" r="7" fill="var(--color-accent)"/>
             <text x="530" y="130" text-anchor="middle" font-size="11" font-weight="600" fill="var(--color-text)">10&#8211;12 mo</text>
@@ -672,14 +688,180 @@ const TOPICS = [
           </g>
         </svg>
       </div>
+      <h3>Month 1</h3>
       <ul>
-        <li><strong>1–2 months:</strong> Brief eye contact, starts to smile socially, lifts head briefly during tummy time.</li>
-        <li><strong>3–4 months:</strong> Holds head steady, pushes up on arms during tummy time, brings hands together, laughs/coos.</li>
-        <li><strong>5–6 months:</strong> Rolls over both ways, reaches for objects, may start sitting with support, begins solids readiness (around 6 months).</li>
-        <li><strong>7–9 months:</strong> Sits without support, may start crawling, responds to their name, babbles ("mama"/"dada" without meaning yet).</li>
-        <li><strong>10–12 months:</strong> Pulls to stand, may cruise along furniture or take first steps, uses simple gestures (waving), may say a first word with meaning.</li>
+        <li>Notices faces</li>
+        <li>Sees bold patterns, especially black and white</li>
+        <li>Recognizes your voice</li>
+        <li>Coos and makes sounds other than crying</li>
+        <li>Brings hands to eyes and mouth</li>
+        <li>Moves head from side to side on tummy</li>
+        <li>Reacts to bright lights and loud sounds (basic reflexes)</li>
       </ul>
-      <div class="callout">Talk to your pediatrician if your baby isn't making eye contact by 3 months, shows no interest in reaching for objects by 6 months, isn't sitting with support by 9 months, or isn't attempting to stand/cruise by 12 months — early evaluation is low-risk and can help.</div>
+      <h3>Month 2</h3>
+      <ul>
+        <li>Recognizes people at a distance and smiles</li>
+        <li>Starts following objects with eyes, close objects first</li>
+        <li>Holds head up</li>
+        <li>Pushes up when lying on tummy</li>
+        <li>Moves arms and legs more smoothly</li>
+        <li>Calms down briefly; may bring hands to mouth to self-soothe</li>
+        <li>Gets fussy or bored if the activity doesn't change</li>
+        <li>May start cooing and early babbling</li>
+      </ul>
+      <h3>Month 3</h3>
+      <ul>
+        <li>Tells your face from others and recognizes familiar faces</li>
+        <li>Smiles at your voice</li>
+        <li>Has different cries for hunger, a diaper change, and pain</li>
+        <li>Opens and shuts hands</li>
+        <li>Reaches for and swipes at dangling objects with more control</li>
+        <li>Follows moving objects with eyes</li>
+        <li>Turns head toward sounds, and away when bored</li>
+        <li>Enjoys playing with others and may cry when play stops</li>
+        <li>Babbles more often</li>
+      </ul>
+      <h3>Month 4</h3>
+      <ul>
+        <li>Giggles and laughs</li>
+        <li>Copies facial expressions</li>
+        <li>Reaches for a toy with one hand</li>
+        <li>Holds head steady without support</li>
+        <li>Pushes up onto elbows on tummy</li>
+        <li>May roll from back to tummy</li>
+        <li>Pushes down on legs when held standing</li>
+      </ul>
+      <h3>Month 5</h3>
+      <ul>
+        <li>Rolls from tummy to back, and often back to tummy too</li>
+        <li>Moves objects from one hand to the other</li>
+        <li>Explores toys with mouth</li>
+        <li>Babbles</li>
+        <li>Loves looking at self in a mirror</li>
+        <li>Entertains self for short periods</li>
+        <li>Is more active and mobile</li>
+      </ul>
+      <h3>Month 6</h3>
+      <ul>
+        <li>Sits without support, at least briefly</li>
+        <li>Starts creeping along the floor</li>
+        <li>Passes things from hand to hand</li>
+        <li>Responds to own name</li>
+        <li>Starts to understand simple words</li>
+        <li>Is more independent and shows more emotions (cries when sad, laughs when happy)</li>
+      </ul>
+      <h3>Month 7</h3>
+      <ul>
+        <li>Sits unsupported for longer</li>
+        <li>Enjoys dropping things on the floor</li>
+        <li>Plays simple games like peekaboo</li>
+        <li>Starts to respond to "no"</li>
+        <li>Finds partly hidden objects</li>
+        <li>Gets better at noticing and responding to your emotions</li>
+      </ul>
+      <h3>Month 8</h3>
+      <ul>
+        <li>Starts crawling</li>
+        <li>Stands for short periods while holding on to something</li>
+        <li>Develops the pincer grasp (picking things up between thumb and index finger)</li>
+        <li>Keeps babbling</li>
+        <li>Drools more</li>
+      </ul>
+      <h3>Month 9</h3>
+      <ul>
+        <li>Crawls and stands for longer</li>
+        <li>Is wary of strangers and clings to familiar people</li>
+        <li>Has favorite toys</li>
+        <li>Makes many sounds, like "mama" and "bababa"</li>
+        <li>Copies sounds and gestures</li>
+        <li>Points at things, including things they want</li>
+      </ul>
+      <h3>Month 10</h3>
+      <ul>
+        <li>Pulls up to stand</li>
+        <li>Cruises (shuffles along furniture while holding on)</li>
+        <li>Moves between lying down, crawling, and standing</li>
+        <li>Gets into a sitting position without help</li>
+        <li>Starts feeding self finger foods as hand-eye coordination improves</li>
+        <li>Explores by shaking, banging, and throwing</li>
+        <li>Plays more actively</li>
+      </ul>
+      <h3>Month 11</h3>
+      <ul>
+        <li>Understands object permanence (things still exist when out of sight)</li>
+        <li>Crawls up stairs (always supervise)</li>
+        <li>Makes sounds that rise and fall more like speech</li>
+        <li>Develops separation anxiety</li>
+        <li>Understands you better and responds to simple statements</li>
+        <li>May say a few words</li>
+        <li>Starts copying your behaviors</li>
+      </ul>
+      <h3>Month 12</h3>
+      <ul>
+        <li>Responds to simple spoken requests</li>
+        <li>Uses gestures: shakes head for "no," waves "bye bye"</li>
+        <li>Says "mama," "dada," and exclamations like "uh oh"</li>
+        <li>Looks at the right object or picture when you name it</li>
+        <li>Uses objects correctly: drinks from a cup, brushes hair, uses a spoon</li>
+        <li>May stand alone and take a few steps without holding on</li>
+        <li>Often throws objects and toys</li>
+        <li>Is becoming a toddler</li>
+      </ul>
+      <div class="callout">Talk to your pediatrician if your baby isn't making eye contact by 3 months, shows no interest in reaching for objects by 6 months, isn't sitting with support by 9 months, or isn't trying to stand or cruise by 12 months. Also mention it if your baby loses a skill they already had, at any age. An early check carries little risk and can help. The <a href="https://www.cdc.gov/act-early/milestones/index.html" target="_blank" rel="noopener noreferrer">CDC checklists</a> list the specific "act early" signs for each age.</div>
+    `,
+  },
+  {
+    id: 'milestones-by-area',
+    category: 'soothing-development',
+    title: 'Milestones by Area & Key Stages',
+    tags: ['milestones', 'development', 'motor skills', 'communication', 'social'],
+    summary: 'The first-year milestones grouped by skill area, plus a quick checklist for 3, 6, 9, and 12 months.',
+    resources: [
+      { title: "CDC's Developmental Milestones (checklists by age)", source: 'CDC: Learn the Signs. Act Early.', url: 'https://www.cdc.gov/act-early/milestones/index.html' },
+      { title: 'Milestone Tracker App (free, iOS & Android)', source: 'CDC: Learn the Signs. Act Early.', url: 'https://www.cdc.gov/act-early/milestones-app/index.html' },
+      { title: 'Baby Milestones by Age (with video clips)', source: 'Pathways.org', url: 'https://pathways.org/track/milestones' },
+      { title: 'Developmental Milestones for Baby', source: 'March of Dimes', url: 'https://www.marchofdimes.org/find-support/topics/parenthood/developmental-milestones-baby' },
+    ],
+    video: { id: 'nl6fxf3sDzk', title: "Important Communication Milestones: Baby's First Year Part 1", source: 'Pathways.org' },
+    moreVideos: [
+      { id: 'Oh_UXzp_vsk', title: "Important Motor Milestones: Baby's First Year Part 1", source: 'Pathways.org' },
+      { id: 'd0FGHFrMRXI', title: 'The 4 to 6 Month Baby Communication Milestones to Look For', source: 'Pathways.org' },
+    ],
+    body: `
+      <p>Doctors and checklists usually group milestones into a few areas of development. Seeing them this way makes the overall direction clearer. For the full month-by-month list, see <a href="#/topic/milestones-first-year">Developmental Milestones by Month (0–12)</a>.</p>
+      <h3>Movement</h3>
+      <ul>
+        <li><strong>Months 1–4:</strong> Head control, pushing up on tummy, steadier arms and legs. <a href="#/topic/tummy-time">Tummy time</a> builds the strength for this.</li>
+        <li><strong>Months 5–8:</strong> Rolling, sitting, creeping, crawling, and the pincer grasp.</li>
+        <li><strong>Months 9–12:</strong> Pulling up to stand, cruising along furniture, and possibly first steps.</li>
+      </ul>
+      <h3>Social and emotional</h3>
+      <ul>
+        <li>Notices faces, then smiles, laughs, and copies expressions</li>
+        <li>Enjoys play and mirrors, and learns to self-soothe</li>
+        <li>Months 9–11: wariness of strangers and separation anxiety appear</li>
+        <li>Copies your behaviors by about month 11</li>
+      </ul>
+      <h3>Communication</h3>
+      <ul>
+        <li>Cooing, different cries, giggling, and babbling</li>
+        <li>Responds to own name and to "no"</li>
+        <li>First words ("mama," "dada") and gestures like waving by about month 12</li>
+      </ul>
+      <h3>Thinking and senses</h3>
+      <ul>
+        <li>Follows objects with eyes and explores with hands and mouth</li>
+        <li>Finds hidden objects and understands object permanence</li>
+        <li>Uses everyday items correctly (cup, spoon, brush) by about month 12</li>
+      </ul>
+      <h3>Key stages at a glance</h3>
+      <ul>
+        <li><strong>By 3 months:</strong> Recognizes faces, tracks objects with eyes, has different cries, reaches with more control.</li>
+        <li><strong>By 6 months:</strong> Sits (briefly or without help), responds to name, passes objects between hands.</li>
+        <li><strong>By 9 months:</strong> Crawls, stands with support, babbles, is wary of strangers, points.</li>
+        <li><strong>By 12 months:</strong> Stands or takes first steps, says first words, waves, uses objects correctly.</li>
+      </ul>
+      <div class="callout">These are typical patterns, not deadlines. If you have concerns about your baby's development, talk to your pediatrician. You don't have to wait for the next scheduled visit.</div>
     `,
   },
 ];
